@@ -1,0 +1,22 @@
+mat-grid-tile {
+  //background-color: lightgoldenrodyellow;
+}
+
+mat-card {
+  //background-color: #9984b7;
+  margin-bottom: 30px;
+}
+
+.status-description {
+  position: absolute;
+  left: 5px;
+}
+
+.status-latest-title {
+  display: flex;
+  align-items: center;
+}
+
+mat-icon {
+  cursor: pointer;
+}

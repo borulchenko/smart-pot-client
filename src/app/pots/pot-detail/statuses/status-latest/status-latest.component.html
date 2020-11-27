@@ -1,0 +1,50 @@
+<mat-card>
+
+  <mat-card-title class="status-latest-title">
+    Latest Status
+    <mat-icon aria-hidden="false" aria-label="autorenew icon"
+    (click)="refreshStatus()">
+      autorenew
+    </mat-icon>
+  </mat-card-title>
+
+  <mat-divider></mat-divider>
+  <mat-card-content *ngIf="status">
+
+    <mat-grid-list cols="4" rowHeight="fit" style="height: 200px">
+      <mat-grid-tile>
+        <span class="status-description">Air temperature:</span>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <span class="mat-body-strong">{{status.airTemperature}}°C</span>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <span class="status-description">Air humidity:</span>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <span class="mat-body-strong">{{status.airHumidity}}%</span>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <span class="status-description">Soil humidity:</span>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <span class="mat-body-strong">{{status.soilHumidity}}%</span>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <span class="status-description">Illumination is:</span>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-slide-toggle
+          class="example-margin"
+          [color]="color"
+          [checked]="status.illuminationEnabled"
+          (change)="toggle()">
+          {{status.illuminationEnabled ? 'ON' : 'OFF'}}
+        </mat-slide-toggle>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+  </mat-card-content>
+</mat-card>
+
+
