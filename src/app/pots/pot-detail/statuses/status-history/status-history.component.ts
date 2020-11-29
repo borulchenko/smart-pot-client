@@ -31,5 +31,14 @@ export class StatusHistoryComponent implements OnInit, OnDestroy {
     this.destroy$.next();
     this.destroy$.complete();
   }
+
+  refreshStatuses(): void {
+    this.statusService.getStatuses()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((data: Status[]) => {
+        this.statuses = data;
+        this.chartService.createCharts(this.statuses);
+      });
+  }
 }
 

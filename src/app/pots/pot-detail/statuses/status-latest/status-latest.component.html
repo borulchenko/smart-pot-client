@@ -43,7 +43,10 @@
         </mat-slide-toggle>
       </mat-grid-tile>
     </mat-grid-list>
+  </mat-card-content>
 
+  <mat-card-content *ngIf="!status">
+    <div class="no-status">There is no statuses!</div>
   </mat-card-content>
 </mat-card>
 

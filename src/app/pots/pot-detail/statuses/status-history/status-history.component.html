@@ -1,6 +1,10 @@
 <mat-card>
-  <mat-card-title>
+  <mat-card-title class="status-history-title">
     Status History
+    <mat-icon aria-hidden="false" aria-label="autorenew icon"
+              (click)="refreshStatuses()">
+      autorenew
+    </mat-icon>
   </mat-card-title>
   <mat-divider></mat-divider>
   <mat-card-content>

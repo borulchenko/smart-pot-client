@@ -1,3 +1,11 @@
 mat-grid-tile {
   //background-color: rgba(0, 255, 130, 0.2);
 }
+.status-history-title {
+  display: flex;
+  align-items: center;
+}
+
+mat-icon {
+  cursor: pointer;
+}
