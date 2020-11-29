@@ -1,5 +1,5 @@
 (function(window) {
     window["env"] = window["env"] || {};
 
-    window["env"]["apiUrl"] = "https://api.myapp.com";
+    window["env"]["cloudApiUrl"] = "http://localhost:8080/";
 })(this);

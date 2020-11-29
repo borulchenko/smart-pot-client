@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  cloudApiUrl: 'http://localhost:8080/',
+  cloudApiUrl: window["env"]["cloudApiUrl"] || "http://localhost:8080/",
   production: false
 };
 
