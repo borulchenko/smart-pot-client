@@ -13,8 +13,6 @@ TypeScript: **3.4.x**
 
 * [SmartPotCore service][smart-pot-core-service]
 
-
-
 ## Deployment
 
 Start server on your local machine running:
@@ -22,5 +20,8 @@ Start server on your local machine running:
 2. ng serve -o 
 
 Otherwise build a docker image and run it in the container, passing required env variables
+
+## Env variables
+* CLOUD_API_URL - SmartPotCore API base url
 
 [smart-pot-core-service]: https://github.com/borulchenko/smart-pot-core
