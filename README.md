@@ -1,27 +1,26 @@
 # SmartPotClient
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+Smart Pot client web app.
+Used to track all posted pots info thru the mqtt broker.
 
-## Development server
+<br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Angular version: **8.x.x**
 
-## Code scaffolding
+TypeScript: **3.4.x**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Dependencies 
 
-## Build
+* [SmartPotCore service][smart-pot-core-service]
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Deployment
 
-## Running end-to-end tests
+Start server on your local machine running:
+1. npm install
+2. ng serve -o 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Otherwise build a docker image and run it in the container, passing required env variables
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[smart-pot-core-service]: https://github.com/borulchenko/smart-pot-core
